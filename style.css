@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=League+Spartan:wght@400;500;600;700;900&family=Poppins:ital,wght@0,200;0,300;0,600;0,700;1,400&family=Roboto&display=swap');
+
+:root
+{
+    --bacgrnd:#212121;
+    --cover-text:#FFFFFF;
+    --headers:#000000;
+    --date:#B7B7B7;
+    --read:#D9852C;
+    --card:#DDDDDD;
+
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+
+.cover
+{
+    height:1024px;
+    background-image: url('cover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--cover-text);
+    background-color: var(--bacgrnd);
+    
+}
+
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    
+}
+
+.logo
+{
+    font-family: Inter;
+    font-size:2.15rem ;
+    font-style: normal;
+    font-weight: 900;
+}
+
+.nav-icon
+{
+    width: 35px;
+    height: 35px;
+}
+
+.main-txt
+{
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    padding-left:10%;
+    padding-top:30%;
+ }   
+
+.cover-head
+{
+    font-size:2.85rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.cover-para
+{
+    font-family: Inter;
+    font-size:1.28rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 168.524%;
+}
+
+button
+{
+    
+    padding:1.5%;
+    border-radius: 10px;
+    border: 2px solid #FFF;
+    background: none;
+    font-family: Inter;
+    font-size:1.28rem;
+    font-style: normal;
+    font-weight: 500;
+    color: var(--cover-text);
+    
+}
+
+
+.cards
+{
+
+    color: var(--headers);
+    margin-left:8%;
+    margin-top:20%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
+}
+
+.cards-header
+{
+    font-family: Inter;
+    font-size:1.72rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+    
+    
+}
+
+.card1
+{
+    width: 311px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    border: 1px solid #DDD;
+    gap: 25px;
+    padding-bottom:2%;
+       
+}
+.card1 h4
+{
+    color:var(--date);
+    font-family: Inter;
+    font-size:0.9rem;
+    font-style: normal;
+    font-weight: 500;
+    padding-left:32px;
+    height:10%;
+
+}
+.card1 >img
+{
+    height:400px;
+    border-radius: 4px;
+}
+
+.card1 h3
+{
+    font-family: Inter;
+    font-size:1.4rem;
+    font-style: normal;
+    font-weight: 700;
+    align-self: center;
+    width:75%;
+    height:50%;
+}
+
+.card1 p
+{
+    color: var(--read);
+    font-family: Inter;
+    font-size:1.05rem;
+    font-weight: 700;
+    align-self:flex-end;
+    padding-right: 7px;
+}
+.links ul
+{
+    display: none;
+}
+
+/* Small devices (tablets) */
+@media screen and (min-width: 774px) {
+
+    *{
+        font-size: 16px;
+    }
+    .navbar
+    {
+        display: flex;
+        padding-top:3%;
+        justify-content: space-between;
+    
+    }
+    .cards
+    {
+    color: var(--headers);
+    margin-left:8%;
+    margin-top:20%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    }
+    
+    .card1
+    {
+        display: flex;
+        flex-direction: column;
+        border-radius: 4px;
+        border: 1px solid #DDD;
+        gap: 10px;
+        width: 250px;
+           
+    }
+
+    
+}
+
+
+@media screen and (min-width: 992px) {
+    *{
+        font-size:16px;
+    }
+    .cards
+    {
+    color: var(--headers);
+    margin-left:8%;
+    margin-top:10%;
+    display: flex;
+    flex-direction: row;
+    }
+    .card1
+    {
+        display: flex;
+        flex-direction: column;
+        border-radius: 4px;
+        border: 1px solid #DDD;
+        gap: 10px;
+        width: 400px;
+        padding-bottom:1%;
+           
+    }
+    .main-txt
+    {
+    padding-top:10%;
+    } 
+   .card1 >img
+    {
+    height:450px;
+    border-radius: 4px;
+    }
+    .links
+    {
+        padding-left: 40%;
+    }
+    .links ul
+    {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    
+    }
+
+    li
+    {
+        font-family: Inter;
+        font-size:1.5rem ;
+        font-style: normal;
+        font-weight: 900;
+    }
+    .navbar
+{
+    display: flex;
+    justify-content:space-between;
+    padding: 3%;
+    
+}
+}
